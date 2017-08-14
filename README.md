@@ -36,7 +36,7 @@ Furthermore, *fromRoot("conf","config.js")* makes it clear where the required fi
 ## migration
 You may want to try this script to migrate to *from-root*.
 
-N.B.: Make sure you can safely role back as changes are made in place.
+N.B.: Make sure you can safely role back as changes are made in place. The script is still naive and works only if all your relative paths go back to the root folder.
 
 ```sh
 cd your_project/
