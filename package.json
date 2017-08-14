@@ -4,15 +4,14 @@
   "description": "A module that helps building paths from project's root folder",
   "main": "index.js",
   "keywords": [
-      "project",
-      "root",
-      "path",
-      "location"
+    "project",
+    "root",
+    "path",
+    "location"
   ],
-  "main": "index.js",
   "repository": {
-      "type": "git",
-      "url": "https://github.com/JXmas/from-root"
+    "type": "git",
+    "url": "https://github.com/JXmas/from-root"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,6 +19,10 @@
   "author": "jxmas",
   "license": "ISC",
   "dependencies": {
-    "find-root": "1.1.0"
+    "find-root": "1.1.0",
+    "replace": "0.3.0"
+  },
+  "bin": {
+    "migrate-files-to-from-root": "./bin/migration/migrate.js"
   }
 }

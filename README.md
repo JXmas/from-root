@@ -33,6 +33,16 @@ Furthermore, *fromRoot("conf","config.js")* makes it clear where the required fi
 ```sh
 > npm install from-root
 ```
+## migration
+You may want to try this script to migrate to *from-root*.
+
+N.B.: Make sure you can safely role back as changes are made in place.
+
+```sh
+cd your_project/
+npm i -g from-root
+find -name "*.js" | xargs grep "\.\." | cut -f"1" -d":" | xagrs migrate-files-to-from-root
+```
 
 ## see also
 - [app-root-path](https://www.npmjs.com/package/app-root-path)
