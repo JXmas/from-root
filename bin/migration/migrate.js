@@ -8,12 +8,13 @@ paths = process.argv.slice(2)
 
 // Migrate paths to fromRoot style
 const replace_func = (m,m1, offset, str) => {
-    let result = "fromRoot("+m1.split("/").map(e=>`'${e}'`).join(",")+")";
+    let result = "require(fromRoot("+m1.split("/").map(e=>`'${e}'`).join(",")+"))";
     console.log(m, " => ", result);
     return result;
 }
 
-const r = /['"](?:\.\.\/)+([(\w+)\/]+)['"]/g;
+const r = /require\(['"](?:\.\.\/)+([(\w+)\/]+)['"]\)/g;
+
 replace({
     regex: r,
     replacement: replace_func,
