@@ -1,6 +1,6 @@
 {
   "name": "from-root",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module that helps building paths from project's root folder",
   "main": "index.js",
   "keywords": [
