@@ -3,6 +3,17 @@
   "version": "1.0.0",
   "description": "A module that helps building paths from project's root folder",
   "main": "index.js",
+  "keywords": [
+      "project",
+      "root",
+      "path",
+      "location"
+  ],
+  "main": "index.js",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/JXmas/from-root"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
