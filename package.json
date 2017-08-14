@@ -1,0 +1,14 @@
+{
+  "name": "from-root",
+  "version": "1.0.0",
+  "description": "A module that helps building paths from project's root folder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jxmas",
+  "license": "ISC",
+  "dependencies": {
+    "find-root": "1.1.0"
+  }
+}
